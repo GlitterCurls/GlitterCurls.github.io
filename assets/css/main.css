@@ -3062,10 +3062,39 @@ input, select, textarea {
 
 			.spotlight .image {
 				padding: 0.35em;
+				margin: 2em;
 			}
 
 				.spotlight .image img {
-					width: 12em;
+					width: 14em;
+				}
+
+		}
+
+		/*Added by shayan*/
+		@media screen and (max-width: 480px) {
+
+			.spotlight .image {
+				padding: 0.35em;
+				margin: 3em;
+			}
+
+				.spotlight .image img {
+					width: 14em;
+				}
+
+		}
+
+		/*Added by shayan*/
+		@media screen and (max-width: 360px) {
+
+			.spotlight .image {
+				padding: 0.35em;
+				margin-top: 9em;
+			}
+
+				.spotlight .image img {
+					width: 14em;
 				}
 
 		}
@@ -3226,8 +3255,9 @@ input, select, textarea {
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
-		padding: 1em;
-		background-color: #1d1f20;
+		/*padding: 1em;*/
+		padding: 1em 0em;
+		background-color: #ffffff;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3299,7 +3329,8 @@ input, select, textarea {
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						/*background-color: rgba(222, 222, 222, 0.25);*/
+						background-color: rgba(100, 100, 100, 0.25);
 					}
 
 					#nav ul li a.active {
@@ -3311,7 +3342,9 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			/*background-color: rgba(247, 247, 247, 0.95);*/
+			background-color: #ffffff;
+			/*color: #ffffff;*/
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3325,7 +3358,14 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
+					/*My added class*/
+					#nav.alt ul li a:hover {
+						background-color: rgba(100, 100, 100, 0.25);
+					}
+
+		/* @media screen and (max-width: 736px) { */
+		/*Shayan copied this function
+		@media screen and (max-width: 0px) {
 
 			#nav {
 				display: none;
@@ -3336,8 +3376,153 @@ input, select, textarea {
 				}
 
 		}
+		*/
 
-/* Main */
+		
+
+	@media screen and (max-width: 480px) {
+
+		#nav {
+			-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+			background-color: #ffffff;
+			/*color: #bfb5b2; */
+			color: #bfb5b2;
+			position: absolute;
+			width: 64em;
+			/*max-width: calc(100% - 4em);*/
+			max-width: calc(100% - 2em);
+			/*padding: 1em;*/
+			padding: 1em 0em;
+			background-color: #ffffff;
+			border-top-left-radius: 0.25em;
+			border-top-right-radius: 0.25em;
+			cursor: default;
+			text-align: center;
+		}
+
+			#nav input, #nav select, #nav textarea {
+				color: #bfb5b2;
+			}
+
+			#nav a:hover {
+				color: #ffffff;
+			}
+
+			#nav strong, #nav b {
+				color: #bfb5b2;
+			}
+
+			#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
+				color: #bfb5b2;
+			}
+
+			#nav blockquote {
+				border-left-color: #dddddd;
+			}
+
+			#nav code {
+				background: rgba(222, 222, 222, 0.25);
+				border-color: #dddddd;
+			}
+
+			#nav hr {
+				border-bottom-color: #dddddd;
+			}
+
+			#nav + #main {
+				padding-top: 4.25em;
+			}
+
+			#nav ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+				#nav ul li {
+					-moz-transition: margin 0.2s ease;
+					-webkit-transition: margin 0.2s ease;
+					-ms-transition: margin 0.2s ease;
+					transition: margin 0.2s ease;
+					display: inline-block;
+					margin: 0 0.35em;
+					padding: 0;
+					vertical-align: middle;
+				}
+
+					#nav ul li a {
+						-moz-transition: font-size 0.2s ease;
+						-webkit-transition: font-size 0.2s ease;
+						-ms-transition: font-size 0.2s ease;
+						transition: font-size 0.2s ease;
+						display: inline-block;
+						height: 2.25em;
+						line-height: 2.25em;
+						padding: 0 1.25em;
+						border: 0;
+						border-radius: 8px;
+						box-shadow: inset 0 0 0 1px transparent;
+					}
+
+						#nav ul li a:hover {
+							/*background-color: rgba(222, 222, 222, 0.25);*/
+							background-color: rgba(100, 100, 100, 0.25);
+						}
+
+						#nav ul li a.active {
+							background-color: #181a1b;
+							box-shadow: none;
+						}
+
+			#nav.alt {
+				position: fixed;
+				top: 0;
+				padding: 0.5em 1em;
+				/*background-color: rgba(247, 247, 247, 0.95);*/
+				background-color: #ffffff;
+				/*color: #ffffff;*/
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				z-index: 10000;
+			}
+
+				#nav.alt ul li {
+					margin: 0 0.175em;
+				}
+
+					#nav.alt ul li a {
+						font-size: 0.9em;
+					}
+
+						/*My added class*/
+						#nav.alt ul li a:hover {
+							background-color: rgba(100, 100, 100, 0.25);
+						}
+	}
+
+	@media screen and (max-width: 360px) {
+
+			#nav {
+				/*max-width: calc(100% - 4em);*/
+				max-width: calc(100%);
+				/*padding: 1em;*/
+				padding: 1em 0em;
+			}
+
+				#nav + #main {
+					padding-top: 0;
+				}
+
+		}
+
+
+
+
+
+	/* Main */
 
 	#main {
 		background-color: #181a1b;
@@ -3521,7 +3706,7 @@ input, select, textarea {
 		#main .formerize-placeholder {
 			color: rgba(99, 99, 99, 0.25) !important;
 		} */
-		
+
 		#main ::-webkit-input-placeholder {
 			color: #dbd5d3 !important;
 		}
@@ -3608,7 +3793,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 5em 5em 3em 5em;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3632,81 +3817,76 @@ input, select, textarea {
 					border-bottom-left-radius: 0;
 				}
 
-		@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
+
+		#main > .main {
+			padding: 4em 4em 2em 4em;
+		}
+
+			#main > .main > .image.main:first-child {
+				margin: -4em 0 4em -4em;
+				width: calc(100% + 8em);
+			}
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#main > .main {
+			padding: 4em 3em 2em 3em;
+		}
+
+			#main > .main > .image.main:first-child {
+				margin: -4em 0 4em -3em;
+				width: calc(100% + 6em);
+			}
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#main > .main {
+			padding: 3em 2em 1em 2em;
+		}
+
+			#main > .main > .image.main:first-child {
+				margin: -3em 0 2em -2em;
+				width: calc(100% + 4em);
+			}
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#main > .main {
+			padding: 3em 1.5em 1em 1.5em;
+		}
+
+			#main > .main > .image.main:first-child {
+				margin: -3em 0 1.5em -1.5em;
+				width: calc(100% + 3em);
+			}
+	}
+
+	@media screen and (max-width: 360px) {
+
+		#main {
+			border-radius: 0;
+		}
 
 			#main > .main {
-				padding: 4em 4em 2em 4em ;
+				padding: 2.5em 1em 0.5em 1em;
 			}
 
 				#main > .main > .image.main:first-child {
-					margin: -4em 0 4em -4em;
-					width: calc(100% + 8em);
+					margin: -2.5em 0 1.5em -1em;
+					width: calc(100% + 2em);
+					border-radius: 0;
 				}
 
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#main > .main {
-				padding: 4em 3em 2em 3em ;
-			}
-
-				#main > .main > .image.main:first-child {
-					margin: -4em 0 4em -3em;
-					width: calc(100% + 6em);
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#main > .main {
-				padding: 3em 2em 1em 2em ;
-			}
-
-				#main > .main > .image.main:first-child {
-					margin: -3em 0 2em -2em;
-					width: calc(100% + 4em);
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#main > .main {
-				padding: 3em 1.5em 1em 1.5em ;
-			}
-
-				#main > .main > .image.main:first-child {
-					margin: -3em 0 1.5em -1.5em;
-					width: calc(100% + 3em);
-				}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			#main {
-				border-radius: 0;
-			}
-
-				#main > .main {
-					padding: 2.5em 1em 0.5em 1em ;
-				}
-
-					#main > .main > .image.main:first-child {
-						margin: -2.5em 0 1.5em -1em;
-						width: calc(100% + 2em);
+					#main > .main > .image.main:first-child img {
 						border-radius: 0;
 					}
+	}
 
-						#main > .main > .image.main:first-child img {
-							border-radius: 0;
-						}
-
-		}
-
-/* Footer */
+	/* Footer */
 
 	#footer {
 		display: -moz-flex;
@@ -3717,7 +3897,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 5em 5em 3em 5em;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 	}
@@ -3734,60 +3914,55 @@ input, select, textarea {
 			text-align: center;
 		}
 
-		@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
 
-			#footer {
-				padding: 4em 4em 2em 4em ;
-			}
+		#footer {
+			padding: 4em 4em 2em 4em;
+		}
+	}
 
+	@media screen and (max-width: 980px) {
+
+		#footer {
+			padding: 4em 3em 2em 3em;
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
 		}
 
-		@media screen and (max-width: 980px) {
-
-			#footer {
-				padding: 4em 3em 2em 3em ;
-				display: block;
-				margin: 0 0 3em 0;
+			#footer > * {
 				width: 100%;
+				margin-left: 0;
+				margin-bottom: 3em;
 			}
 
-				#footer > * {
-					width: 100%;
-					margin-left: 0;
-					margin-bottom: 3em;
-				}
-
-				#footer .copyright {
-					text-align: left;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3em 2em 1em 2em ;
+			#footer .copyright {
+				text-align: left;
 			}
+	}
 
+	@media screen and (max-width: 736px) {
+
+		#footer {
+			padding: 3em 2em 1em 2em;
 		}
+	}
 
-		@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {
 
-			#footer {
-				padding: 3em 1.5em 1em 1.5em ;
-			}
-
+		#footer {
+			padding: 3em 1.5em 1em 1.5em;
 		}
+	}
 
-		@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {
 
-			#footer {
-				padding: 2.5em 1em 0.5em 1em ;
-			}
-
+		#footer {
+			padding: 2.5em 1em 0.5em 1em;
 		}
+	}
 
-/* Wrapper */
+	/* Wrapper */
 
 	#wrapper {
 		width: 64em;
@@ -3795,18 +3970,16 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
-		@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {
 
-			#wrapper {
-				max-width: calc(100% - 2em);
-			}
-
+		#wrapper {
+			max-width: calc(100% - 2em);
 		}
+	}
 
-		@media screen and (max-width: 360px) {
+	@media screen and (max-width: 360px) {
 
-			#wrapper {
-				max-width: 100%;
-			}
-
+		#wrapper {
+			max-width: 100%;
 		}
+	}
