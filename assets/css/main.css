@@ -2712,10 +2712,12 @@ input, select, textarea {
 		overflow-x: auto;
 	}
 
-	table {
-		margin: 0 0 2em 0;
-		width: 100%;
-	}
+table {
+	margin: 0 0 2em 0;
+	width: 100%;
+	border-collapse: separate;
+	background: rgba(100, 100, 100, 0);
+}
 
 		table tbody tr {
 			border: solid 1px;
@@ -2725,17 +2727,23 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+			padding: 0.3em 1em;
+			font-size: 0.9em;
+			text-align: left;
 		}
 
 		table th {
-			font-size: 0.9em;
+			/*font-size: 0.9em;*/
+			font-size: 0.8em;
 			font-weight: 400;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0.5em 1em;
 			text-align: left;
 		}
 
 		table thead {
 			border-bottom: solid 2px;
+			font-size: 1.2em;
+			background-color: #532978;
 		}
 
 		table tfoot {
@@ -2768,20 +2776,24 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-	table tbody tr {
-		border-color: rgba(255, 255, 255, 0.35);
+	table tbody th, tr {
+		border-color: rgba(255, 255, 255, 0);
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(255, 255, 255, 0.075);
+			/*
+			background-color: rgba(255, 255, 255, 0.075);*/
 		}
 
-	table th {
-		color: #ffffff;
+	tr:nth-child(2n + 1){background-color: rgba(255, 255, 255, 0.04)}
+	tr:nth-child(2n){background-color: rgba(255, 255, 255, 0.02)}
+
+	table tr, th {
+		color: #dddddd;
 	}
 
 	table thead {
-		border-bottom-color: rgba(255, 255, 255, 0.35);
+		border-bottom-color: rgba(255, 255, 255, .75);
 	}
 
 	table tfoot {
@@ -2791,6 +2803,13 @@ input, select, textarea {
 	table.alt tbody tr td {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
+
+
+	tbody th:hover, tr:hover {
+		background-color: #adadad;
+		color: #222222;
+	}
+
 
 /* Features */
 
@@ -3768,9 +3787,9 @@ input, select, textarea {
 			border-color: #dddddd;
 		}
 
+		/*Shayan
 			#main table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(222, 222, 222, 0.25);
-			}
 
 		#main table th {
 			color: #bfb5b2;
@@ -3787,6 +3806,7 @@ input, select, textarea {
 		#main table.alt tbody tr td {
 			border-color: #dddddd;
 		}
+			}*/
 
 		#main .spotlight .image {
 			border-color: #dddddd;
