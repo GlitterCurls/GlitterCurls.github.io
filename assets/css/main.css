@@ -2414,6 +2414,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			/*Added by shayan*/
+			@media screen and (max-width: 480px) {
+					.image.main img {
+					width: 100%;
+				}
+			}
+
 /* List */
 
 	ol {
@@ -2903,6 +2910,7 @@ table {
 			padding: 0;
 			color: #ffffff;
 			text-align: center;
+			padding: 1em 0em;
 		}
 
 			.statistics li.style1 {
@@ -2935,13 +2943,13 @@ table {
 			}
 
 			.statistics li:first-child {
-				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
+				border-top-left-radius: 40px;
+				border-bottom-left-radius: 40px;
 			}
 
 			.statistics li:last-child {
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
+				border-top-right-radius: 40px;
+				border-bottom-right-radius: 40px;
 			}
 
 			.statistics li .icon {
@@ -2970,16 +2978,27 @@ table {
 				width: 20em;
 				max-width: 100%;
 				margin: 0 auto 2em auto;
+
+				padding: 0em;
+				display: block;
+				width: 26em;
+				max-width: 100%;
+				margin: 0 auto 2em auto;
+
 			}
 
 				.statistics li:first-child {
 					border-bottom-left-radius: 0;
 					border-top-right-radius: 8px;
+					border-top-left-radius: 40px;
+					border-top-right-radius: 40px;
 				}
 
 				.statistics li:last-child {
 					border-top-right-radius: 0;
 					border-bottom-left-radius: 8px;
+					border-bottom-left-radius: 40px;
+					border-bottom-right-radius: 40px;
 				}
 
 				.statistics li .icon:before {
@@ -2988,6 +3007,10 @@ table {
 
 				.statistics li strong, .statistics li b {
 					font-size: 2.5em;
+				}
+
+				.statistics li {
+					padding: 1em 0em;
 				}
 
 		}
@@ -3877,12 +3900,15 @@ table {
 
 		#main > .main {
 			padding: 3em 1.5em 1em 1.5em;
+			/*Added by Shayan*/
+			padding: 3em .7em 1em .7em;
 		}
 
 			#main > .main > .image.main:first-child {
 				margin: -3em 0 1.5em -1.5em;
 				width: calc(100% + 3em);
 			}
+
 	}
 
 	@media screen and (max-width: 360px) {
@@ -3893,6 +3919,8 @@ table {
 
 			#main > .main {
 				padding: 2.5em 1em 0.5em 1em;
+				/*Added by Shayan*/
+				padding: 2.5em .5em 0.5em .5em;
 			}
 
 				#main > .main > .image.main:first-child {
