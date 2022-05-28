@@ -147,7 +147,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 370px) {
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -3128,7 +3128,7 @@ table {
 		}
 
 		/*Added by shayan*/
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 370px) {
 
 			.spotlight .image {
 				padding: 0.35em;
@@ -3261,7 +3261,7 @@ table {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 370px) {
 
 			#header {
 				padding: 2.5em 1em 0.1em 1em ;
@@ -3545,7 +3545,7 @@ table {
 						}
 	}
 
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 370px) {
 
 			#nav {
 				/*max-width: calc(100% - 4em);*/
@@ -3911,7 +3911,7 @@ table {
 
 	}
 
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 370px) {
 
 		#main {
 			border-radius: 0;
@@ -4025,7 +4025,7 @@ table {
 		}
 	}
 
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 370px) {
 
 		#wrapper {
 			max-width: 100%;
