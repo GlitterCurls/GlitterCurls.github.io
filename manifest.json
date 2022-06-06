@@ -1,0 +1,37 @@
+{
+    "name": "Glitter Curls",
+    "short_name": "GlitterCurls",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#da7886",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "/images/pic01_192.webp",
+        "sizes": "192x192",
+        "type": "image/webp",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/images/pic01.webp",
+        "sizes": "318x318" ,
+        "type": "image/webp",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/images/GC_512.webp",
+        "sizes": "512x512" ,
+        "type": "image/webp",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/images/GC.png",
+        "sizes": "1764x1764" ,
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }
+  
