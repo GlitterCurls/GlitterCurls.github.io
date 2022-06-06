@@ -1,10 +1,18 @@
+/*
 const staticGlitterCurls = "Glitter-Curls"
 const assets = [
+  
   "/",
   "/index.html",
+  "/About.html",
+  "/appointment.html",
+  "/MoreWork.html",
+  "/services.html",
+  "/T&C.html",
   "/css/main.css",
   "/js/main.js",
   "/images/anjum.webp",
+  
 ]
 
 self.addEventListener("install", installEvent => {
@@ -24,3 +32,13 @@ self.addEventListener("fetch", fetchEvent => {
     );
   });
   */
+
+
+  importScripts(
+    'https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js'
+  );
+
+  workbox.routing.registerRoute(
+    ({request}) => request.destination === 'image',
+    new workbox.strategies.NetworkFirst()
+  );
