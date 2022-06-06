@@ -3433,7 +3433,6 @@ table {
 			transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 			background-color: #ffffff;
 			/*color: #bfb5b2; */
-			color: #bfb5b2;
 			position: absolute;
 			width: 64em;
 			/*max-width: calc(100% - 4em);*/
@@ -3517,7 +3516,7 @@ table {
 						}
 
 						#nav ul li a.active {
-							background-color: #181a1b;
+							/*background-color: #181a1b;*/
 							box-shadow: none;
 						}
 
