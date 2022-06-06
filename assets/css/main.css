@@ -3293,12 +3293,13 @@ table {
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		/*color: #bfb5b2; */
-		color: #bfb5b2;
+		color: #646464;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		/*padding: 1em;*/
 		padding: 1em 0em;
+		font-weight: 500;
 		background-color: #ffffff;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
@@ -3377,6 +3378,7 @@ table {
 
 					#nav ul li a.active {
 						background-color: #181a1b;
+						background-color: #e4e4e4;
 						box-shadow: none;
 					}
 
@@ -3646,8 +3648,11 @@ table {
 			#main button.primary,
 			#main .button.primary {
 				background-color: #8cc9f0;
+				background-color: #da7886;
+				background-color: #cc4357;
 				color: #ffffff !important;
 				box-shadow: none;
+				font-weight: 500;
 			}
 
 				#main input[type="submit"].primary:hover,
